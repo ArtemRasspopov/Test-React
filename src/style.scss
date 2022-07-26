@@ -1,6 +1,11 @@
-// @import './styles/reset';
 @import "./styles/norm";
-// @import './styles/normalize';
+@import "../node_modules/fullpage.js/dist/fullpage.min.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 body::-webkit-scrollbar {
   width: 0px; /* ширина scrollbar */
@@ -30,15 +35,45 @@ body::-webkit-scrollbar {
   font-weight: 600;
 }
 
-.scrollToTop{
+.to-top-button {
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
   cursor: pointer;
   padding: 10px 20px;
-  background-color: antiquewhite;
-  color: black;
+  background-color: black;
+  color: white;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.505);
+    color: azure;
+  }
 }
+
+.fp-watermark {
+  display: none;
+}
+
+.fp-right {
+  a {
+  }
+}
+
+// #fp-nav ul li {
+//   &:not(:first-child) {
+//     display: none;
+//     position: relative;
+//   }
+// }
+
+// #fp-nav ul li a span {
+//   &::after {
+//     position: absolute;
+//     left: 0;
+//     background-color: aqua;
+//   }
+// }
