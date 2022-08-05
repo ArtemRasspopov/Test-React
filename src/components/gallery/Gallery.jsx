@@ -54,8 +54,8 @@ export default function Gallery({ src, index, columnOffset }) {
   return (
     <section data-scroll-section className="section-wrapper gallery-wrap">
       <div className="gallery" ref={ref}>
-        <div className="gallery-counter">
-          <span className="title">Projects</span>
+        <div className="gallery-title">
+          Progects
         </div>
         {progects.map((item, index) => (
           <GalleryItem key={src} {...item} />
